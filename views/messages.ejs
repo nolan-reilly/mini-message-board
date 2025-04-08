@@ -4,11 +4,11 @@
   </head>
 
   <body>
-    <h1>Homepage</h1>
+    <h1><%= username %> Messages</h1>
 
     <% messages.forEach((message) => { %>
-    <p><%= message.user %>: <%= message.text %></p>
-    <a href="/<%= message.user %>">View All Messages</a>
+    <p><%= message.text %></p>
+    <p><%= message.added %></p>
     <% }) %>
   </body>
 </html>
